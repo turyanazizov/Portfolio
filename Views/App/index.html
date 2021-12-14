@@ -1,0 +1,106 @@
+{% extends 'App/base.html' %} {% block content %}
+
+<body>
+    <!-- Home Page Start -->
+    <section id="home-page">
+        <div class="container-full">
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-page">
+                        <div class="navbar">
+                            <ul>
+                                <li id="logo">
+                                    <a href="#">
+                                        <span id="logo-cont">
+                                            TA
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="right">
+                                    <a href="/"><i style="color: #5ac24e;" class="fas fa-home hv-white"></i></a>
+                                    <div class="li-hov">Home</div>
+                                </li>
+                                <li class="right">
+                                    <a href="/about"><i class="far fa-user hv-white"></i></a>
+                                    <div class="li-hov">About</div>
+                                </li>
+                                <li class="right">
+                                    <a href="/resume"><i class="fas fa-cog hv-white"></i></a>
+                                    <div class="li-hov">Resume</div>
+                                </li>
+                                <li class="right">
+                                    <a href="/portfolio"><i class="far fa-eye hv-white"></i></a>
+                                    <div class="li-hov">Portfolio</div>
+                                </li>
+                                <li class="right">
+                                    <a href="/blog"><i class="far fa-newspaper hv-white"></i></a>
+                                    <div class="li-hov">Blog</div>
+                                </li>
+                                <li class="right">
+                                    <a href="/contact"><i class="far fa-envelope hv-white"></i></a>
+                                    <div class="li-hov">Contact</div>
+                                </li>
+                            </ul>
+                            <ul id="sec-ul">
+                                <li>
+                                    <a href="https://wa.me/+994708435013"><i
+                                            class="fab fa-whatsapp-square dec-size hv-green"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/people/Turyan-Azizov/100007858877577/"><i
+                                            class="fab fa-facebook-square dec-size hv-green"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/turyanazizov"><i
+                                            class="fab fa-github-square dec-size hv-green"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com"><i
+                                            class="fab fa-twitter-square dec-size hv-green"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg">
+                            <!-- particles.js container -->
+                            <div id="particles-js"></div> <!-- stats - count particles -->
+                            <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
+                            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+                            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+                            <!-- stats.js lib -->
+                            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+                            <div id="im">
+                                <div>
+                                    <span id="name">Turyan</span>
+                                    <span id="sname">Azizov</span>
+                                </div>
+                                <div id="auto">
+                                    <h1>
+                                        <h3><strong>I am a </strong>
+                                            <p> </p>
+                                            <!-- <p id="txt"></p> -->
+
+                                            <a style="color: aliceblue;text-decoration: none;font-family: 'Poppins', sans-serif;cursor:default" href="" class="typewrite"
+                                                data-period="2000"
+                                                data-type='[ "web developer.", "freelancer.", "backend developer." ]'>
+                                                <span class="wrap"></span>
+                                            </a>
+                                        </h3>
+                                    </h1>
+
+                                </div>
+                            </div>
+                            <div class="dark">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Page End -->
+    <script src="/static/js/auto_write.js"></script>
+    <script src="/static/js/particulars.js"></script>
+</body>
+
+</html>
+{% endblock %}
