@@ -25,7 +25,7 @@ def contact():
         _fullname=request.form['fullname']
         _email=request.form['email']
         _text=request.form['text']
-        _date='00'
+        _date=datetime.datetime.now()
         message=Message(username=_fullname,email=_email,text=_text,date=_date)
         db.session.add(message)
         db.session.commit()
