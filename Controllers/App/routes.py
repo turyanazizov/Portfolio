@@ -25,7 +25,7 @@ def contact():
         _fullname=request.form['fullname']
         _email=request.form['email']
         _text=request.form['text']
-        _date=datetime.datetime.now()
+        _date='00'
         message=Message(username=_fullname,email=_email,text=_text,date=_date)
         db.session.add(message)
         db.session.commit()
@@ -39,7 +39,7 @@ def portfolio():
     portfolios=Portfolio.query.all()
     return render_template('App/portfolio.html',portfolios=portfolios)
 
-@app.route('/resume')
+@app.route('/resume',methods=['GET','POST'])
 def resume():
     resumes=Resume.query.all()
     return render_template('App/resume.html',resumes=resumes)
