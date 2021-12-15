@@ -32,7 +32,7 @@ def contact():
         render_template('admin/control-inbox.html',messages=messages)
         return redirect('/contact')
     else:
-        return render_template('app/contact.html')
+        return render_template('App/contact.html')
 
 @app.route('/portfolio',methods=['GET','POST'])
 def portfolio():
