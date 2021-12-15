@@ -29,7 +29,7 @@ def contact():
         message=Message(username=_fullname,email=_email,text=_text,date=_date)
         db.session.add(message)
         db.session.commit()
-        render_template('admin/control-inbox.html',messages=messages)
+        render_template('Admin/control-inbox.html',messages=messages)
         return redirect('/contact')
     else:
         return render_template('App/contact.html')
