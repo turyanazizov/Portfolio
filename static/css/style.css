@@ -772,12 +772,46 @@ body {
     object-fit: cover;   
 }
 .blog-form form{
+    position: relative;
     padding: 0px 0px 70px 0px;
     height: 320px;
     width: 660px;
     margin: 16px 0px;
     background: rgba(255, 255, 255, .05);
     border-radius: 18px;
+    overflow: hidden;
+}
+.hv{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-color: #5ac24e;
+    display: none;
+}
+.portfolio-img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .5s ease;
+}
+.portfolio-img:hover img{
+    transform: scale(1.3);
+    transition: transform .5s ease;
+    opacity: 0.5;
+}
+.portfolio-img:hover .hv{
+    display: block;
+}
+
+.portfolio-img{
+    position: relative;
+    width: 100%;
+    height: 324px;
+    overflow: hidden;
+    margin-bottom:10px ;
 }
 .blog-form h2{
     margin: 0;
