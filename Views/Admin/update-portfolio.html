@@ -29,13 +29,19 @@
                 <input name="detail" value="{{portfolio.portfolio_detail}}" type="text" class="form-control"
                     placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
             </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Portfolio Link</span>
+                </div>
+                <input name="link" value="{{portfolio.link}}" type="text" class="form-control"
+                    placeholder="Link" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
             <div class="custom-file mb-3">
                 <input name="photo" type="file" class="custom-file-input" id="customFile">
               </div>
             <button type="submit" class="btn btn-secondary btn-lg btn-block">Save all changes</button>
         </form>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
